@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Pixel Studio - Minecraft Resources</title>
+  <meta name="description" content="Download and explore the best Minecraft addons, texture packs, mods, resource packs, data packs, and more from Pixel Studio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'VT323', monospace;
+      background-color: #1f2937;
+      color: #ffffff;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Press Start 2P', cursive;
+      margin-bottom: 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1rem;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .logo {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+    .pg {
+      width: 250px;
+      height: 30px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+    .pg1 {
+      width: 270px;
+      height: 28px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+    .title {
+      font-size: 1.875rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .subtitle {
+      color: #d1d5db;
+      font-size: 0.875rem;
+      margin-bottom: 2rem;
+    }
+    .tabs {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .tab-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 1.5rem;
+      background-color: #111827;
+      border-radius: 0.25rem;
+      overflow: hidden;
+    }
+    .tab-trigger {
+      padding: 0.75rem 1rem;
+      text-align: center;
+      cursor: pointer;
+      color: #9ca3af;
+      transition: all 0.2s;
+      border: none;
+      background: transparent;
+      font-family: 'VT323', monospace;
+      font-size: 1rem;
+    }
+    .tab-trigger:hover {
+      color: #ffffff;
+    }
+    .tab-trigger.active {
+      background-color: #374151;
+      color: white;
+      font-weight: bold;
+    }
+    .tab-content {
+      display: none;
+      background-color: #111827;
+      border-radius: 0.375rem;
+      padding: 1rem;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .minecraft-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #CCCCCC;
+      text-shadow:
+        2px 2px 0 #555555,
+        -2px -2px 0 #333333,
+        2px -2px 0 #555555,
+        -2px 2px 0 #333333,
+        0px 2px 0 #555555,
+        2px 0px 0 #333333,
+        0px -2px 0 #555555,
+        -2px 0px 0 #333333,
+        2px 4px 0 #222222;
+      letter-spacing: 3px;
+      transform: perspective(500px) rotateX(10deg);
+      font-family: 'Press Start 2P', cursive;
+    }
+    .description {
+      color: white;
+      margin-bottom: 1.5rem;
+      max-width: 48rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section-title {
+      font-size: 1.25rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .video-container {
+      margin-bottom: 2rem;
+    }
+    .video-frame {
+      margin: 0 auto;
+      display: block;
+      max-width: 100%;
+    }
+    .download-button {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #059669;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .download-button:hover {
+      background-color: #047857;
+    }
+    @media (max-width: 640px) {
+      .minecraft-title {
+        font-size: 1.5rem;
+      }
+      .video-frame {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-center">
+      <img src="logo.png" alt="Pixel Studio Logo" class="logo">
+      <h1 class="title">Pixel Studio</h1>
+      <p class="subtitle">Specialized in high-quality Minecraft add-ons for Bedrock and Pocket Edition.</p>
+
+      <div class="tabs">
+        <div class="tab-list">
+          <button class="tab-trigger active" data-tab="pixelated-guns-1">Pixelated Guns 1</button>
+          <button class="tab-trigger" data-tab="pixelated-guns-2">Pixelated Guns 2</button>
+          <button class="tab-trigger" data-tab="pixelated-guns-dlcs">Pixelated Guns DLCs</button>
+        </div>
+
+        <div id="pixelated-guns-1" class="tab-content active">
+          <div class="text-center">
+            <img src="pg1.png" alt="PG1" class="pg">
+            <p class="description">
+              Pixelated Guns introduces an exciting and a new way to play Minecraft, allowing you and your friends to combat mobs with an arsenal of guns. Imagine defeating the Wither, Ender Dragon, venturing into the End and Nether without a hint of fear. Envision engaging in 1v1 battles with friends, turning the experience into an epic battle royale. And now, introducing pets to join your adventures. We're dedicated to enhancing this project and would love to hear your feedback. Your support means a lot to us!
+            </p>
+            <div class="video-container">
+              <h3 class="section-title">Video Showcase</h3>
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/YqwqRPojSgs?si=onSqpk53R3kZS7f8" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                class="video-frame"
+              ></iframe>
+            </div>
+            <a 
+              href="https://mcpeaddons.app/pixelated-guns-addon" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="download-button"
+            >
+              Download Pixelated Guns 1
+            </a>
+          </div>
+        </div>
+
+        <div id="pixelated-guns-2" class="tab-content">
+          <div class="text-center">
+            <img src="pg2.png" alt="PG2" class="pg">
+            <p class="description">
+              Introducing the revolutionary Pixelated Guns 2 for Minecraft, a dynamic modification that injects exhilarating firepower into your gameplay experience. With this addon, players are empowered with an arsenal of diverse firearms, from sleek pistols to powerful rifles, transforming the serene landscapes of Minecraft into adrenaline-pumping battlegrounds.
+            </p>
+          <div class="video-container">
+              <h3 class="section-title">Video Showcase</h3>
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/_Us5SDHyr5E?si=kfyGzPgoCg_2qabo" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                class="video-frame"
+              ></iframe>
+            </div>
+            <a 
+              href="https://mcpeaddons.app/pixelated-guns-addon" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="download-button"
+            >
+              Download Pixelated Guns 2
+            </a>
+          </div>
+        </div>
+        <div id="pixelated-guns-dlcs" class="tab-content">
+          <div class="text-center">
+            <img src="pgdlc.png" alt="PG2" class="pg1">
+            <p class="description">
+              Pixelated Guns DLCs expand the core gameplay with unique themes, weapons, and challenges.These can either be played as a standalone or with the base addons.
+            </p>
+            <h3 class="section-title">Zombie Apocalypse DLC!</h3>
+            <p class="description">
+              Zombie Apocalypse DLC throws you into a deadly survival scenario with 5 unique types of zombies, each with different abilities. Battle the undead using two powerful new weapons: the flamethrower and the grenade launcher.
+            </p>
+            <div class="video-container">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/qU8BjNVoXQk?si=RNmTg460UdK_l1Ia" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                class="video-frame"
+              ></iframe>
+            </div>
+            <a 
+              href="https://mcpeaddons.app/pixelated-guns-addon" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="download-button"
+            >
+              Download Zombie Apocalypse DLC
+            </a>
+          </div>
+        </p>
+            <h3 class="section-title">Frankenstein DLC!</h3>
+            <p class="description">
+              Frankenstein DLC is a Halloween special that introduces a powerful Frankenstein boss with unique abilities. Prepare for a spooky fight as he uses different attacks to challenge your survival.
+            </p>
+            <div class="video-container">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/QTRb4S4b-NQ?si=_4vFUtmZ0QccU0Vu" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                class="video-frame"
+              ></iframe>
+            </div>
+            <a 
+              href="https://mcpeaddons.app/pixelated-guns-addon" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="download-button"
+            >
+              Download Frankenstein DLC
+            </a>
+          </div>
+        </div>
+          
+
+  <script>
+    // Tab switching logic
+    const tabTriggers = document.querySelectorAll('.tab-trigger');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const target = trigger.getAttribute('data-tab');
+
+        tabTriggers.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        trigger.classList.add('active');
+        document.getElementById(target).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
